@@ -4,7 +4,7 @@ from .models import Todo
 from .serializers import TodoSerializer
 
 # Create your views here.
-class TodoList(generics.ListAPIView):
+class ListTodo(generics.ListAPIView):
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer
 
